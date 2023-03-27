@@ -1,0 +1,23 @@
+{
+  "name": "olc2-serverless",
+  "version": "1.0.0",
+  "description": "Intro to serverless technologies using Node and AWS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "deploy-dev": "serverless deploy --stage dev --aws-profile DEV",
+    "deploy-prod": "serverless deploy --stage prod --aws-profile PROD"
+  },
+  "author": "Ing. Luis Lizama",
+  "license": "ISC",  
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "serverless-http": "^3.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
