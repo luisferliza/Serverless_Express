@@ -1,5 +1,5 @@
 
-const { success } = require('../utils/response.handler')
+const { success } = require('../Utils/response.handler')
 const BooksService = require('../Services/books.service')
 
 async function getBooks(req, res, next) {
